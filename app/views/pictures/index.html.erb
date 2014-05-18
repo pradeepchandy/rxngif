@@ -1,0 +1,17 @@
+<div class="page-header">
+  <h1>Pictures Index</h1>
+</div>
+
+<% @pictures.each do |picture| %>
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title"><%= picture.caption %></h3>
+
+              <img src="<%= picture.source %>"  width="200"  > </img>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>

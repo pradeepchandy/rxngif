@@ -1,1 +1,15 @@
 <h1>Picture Details</h1>
+
+
+<div class="row">
+  <div class="col-md-12">
+    <p class="lead"> </p>
+
+<img src="<%= @pictures.source %>" alt="Smiley face" height="42" width="42">
+    <p class="lead"> <%= @pictures.caption %></p>
+    <p class="lead"> <%= @pictures.favorite %></p>
+
+    <a href="http://localhost:3000/delete_picture/<%= @pictures.id %>">Delete this picture</a>
+
+  </div>
+</div>
